@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidTraining1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textview_text">this is the text from strings.xml</string>
+    <string name="title_activity_styling">Styling</string>
+    <string name="title_activity_database">Database</string>
+    <string name="title_activity_shared_prefs">SharedPrefs</string>
+    <string name="title_activity_webview">Webview</string>
+    <string name="title_activity_json_parser">JsonParser</string>
+    <string name="title_activity_listview">ListviewActivity</string>
+    <string name="title_activity_call">CallActivity</string>
+
+</resources>

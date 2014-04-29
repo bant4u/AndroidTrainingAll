@@ -21,14 +21,14 @@
         <Button
             android:id="@+id/btn_listview"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="ListView" />
 
         <Button
             android:id="@+id/btn_styling"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="Styling" />
     </LinearLayout>
@@ -41,14 +41,14 @@
         <Button
             android:id="@+id/btn_database"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="Database" />
 
         <Button
             android:id="@+id/btn_shared_prefs"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="Shared Preferences" />
     </LinearLayout>
@@ -61,14 +61,14 @@
         <Button
             android:id="@+id/btn_webview"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="WebView" />
 
         <Button
             android:id="@+id/btn_web_services"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="Web Services" />
     </LinearLayout>
@@ -79,9 +79,15 @@
         android:layout_height="wrap_content" >
 
         <Button
+            android:id="@+id/btn_rss"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:text="Rss Reader" />
+        <Button
             android:id="@+id/btn_call"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:layout_weight="1"
             android:text="Call Sample" />
     </LinearLayout>

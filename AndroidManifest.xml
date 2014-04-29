@@ -59,6 +59,10 @@
             android:name="com.gdg.androidtraining.phonecall.CallActivity"
             android:label="@string/title_activity_call" >
         </activity>
+        <activity
+            android:name="com.gdg.androidtraining.rssreader.RssReaderActivity"
+            android:label="@string/title_activity_call" >
+        </activity>
     </application>
 
 </manifest>

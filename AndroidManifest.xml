@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.at.androidtraining"
+    package="com.gdg.androidtraining"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,6 +9,7 @@
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -17,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.at.androidtraining.MainActivity"
+            android:name="com.gdg.androidtraining.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,32 +27,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.at.androidtraining.styling.StylingActivity"
+            android:name="com.gdg.androidtraining.styling.StylingActivity"
             android:label="@string/title_activity_styling" >
         </activity>
         <activity
-            android:name="com.at.androidtraining.database.DatabaseActivity"
+            android:name="com.gdg.androidtraining.database.DatabaseActivity"
             android:label="@string/title_activity_database" >
         </activity>
         <activity
-            android:name="com.at.androidtraining.sharedpreferences.SharedPrefsActivity"
+            android:name="com.gdg.androidtraining.sharedpreferences.SharedPrefsActivity"
             android:label="@string/title_activity_shared_prefs" >
         </activity>
         <activity
-            android:name="com.at.androidtraining.webview.WebviewActivity"
+            android:name="com.gdg.androidtraining.webview.WebviewActivity"
             android:label="@string/title_activity_webview"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.at.androidtraining.webservices.JsonParserActivity"
+            android:name="com.gdg.androidtraining.webservices.JsonParserActivity"
             android:label="@string/title_activity_json_parser" >
         </activity>
         <activity
-            android:name="com.at.androidtraining.listview.ListviewActivity"
+            android:name="com.gdg.androidtraining.listview.ListviewActivity"
             android:label="@string/title_activity_listview" >
         </activity>
         <activity
-            android:name="com.at.androidtraining.phonecall.CallActivity"
+            android:name="com.gdg.androidtraining.listview.CustomListViewActivity"
+            android:label="@string/title_activity_listview" >
+        </activity>
+        <activity
+            android:name="com.gdg.androidtraining.phonecall.CallActivity"
+            android:label="@string/title_activity_call" >
+        </activity>
+        <activity
+            android:name="com.gdg.androidtraining.rssreader.RssReaderActivity"
             android:label="@string/title_activity_call" >
         </activity>
     </application>

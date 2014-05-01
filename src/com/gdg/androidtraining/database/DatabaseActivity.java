@@ -42,7 +42,7 @@ public class DatabaseActivity extends Activity {
 		showPhone = sharedPreferences.getBoolean("CheckBox_Value", false);
 		
 
-		BaseAdapter adapter = new ArrayAdapter<Student>(this, android.R.layout.simple_list_item_1, studentList){
+		adapter = new ArrayAdapter<Student>(this, android.R.layout.simple_list_item_1, studentList){
 			@Override
 			public View getView(int position, View convertView, ViewGroup parent) {
 				if(convertView == null){
@@ -79,14 +79,17 @@ public class DatabaseActivity extends Activity {
 		
 	}
 	
-	protected void showOptions(Student student) {
-		final String options[] = new String[]{"Call","Duplicate", "Edit", "Delete"};
+	protected void showOptions(final Student student) {
+		final String options[] = new String[]{"Delete"};
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle(student.getName())
 				.setItems(options, new OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						toast(options[which] + " clicked");
+						Student stud = studentList.remove(which);
+						dh.deleteStudent(stud);
+						adapter.notifyDataSetChanged();
 					}
 				})
 				.setPositiveButton("Dismiss", null)
@@ -116,9 +119,15 @@ public class DatabaseActivity extends Activity {
 						EditText phone = (EditText) custom.findViewById(R.id.txt_phone);
 						EditText address = (EditText) custom.findViewById(R.id.txt_address);
 						Student st = new Student(0, name.getText().toString(), null, phone.getText().toString(), address.getText().toString());
-						Student stud = dh.addStudent(st);
-						studentList.add(stud);
-						adapter.notifyDataSetChanged();
+						if(st.getName().length() > 0){
+							Student stud = dh.addStudent(st);
+							studentList.add(stud);
+							adapter.notifyDataSetChanged();
+							toast("Saved data");
+						}
+						else{
+							toast("Name empty");
+						}
 					}
 				})
 				.setNegativeButton("Cancel", null)
@@ -130,6 +139,7 @@ public class DatabaseActivity extends Activity {
 			Student st = studentList.remove(0);
 			dh.deleteStudent(st);
 			adapter.notifyDataSetChanged();
+			toast("First data deleted");
 		}
 
 	}

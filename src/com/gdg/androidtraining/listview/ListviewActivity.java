@@ -22,14 +22,13 @@ public class ListviewActivity extends Activity {
 		setContentView(R.layout.activity_listview);
 		
         listView = (ListView) findViewById(R.id.list);
-        String[] values = new String[] { "Apple", 
-                                         "Google",
-                                         "Microsoft",
-                                         "Amazon", 
-                                         "Air bnb", 
-                                         "Twitter", 
-                                         "Facebook", 
-                                         "buffer" 
+        String[] values = new String[] { "Semicolon Developers", 
+                                         "AppsJhola",
+                                         "Online Baghchal",
+                                         "Picovico", 
+                                         "Birthday Forest", 
+                                         "Yellow Nepal", 
+                                         "JokeSanjal"
                                         };
         
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values);

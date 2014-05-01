@@ -67,9 +67,9 @@ public class JsonParserActivity extends ListActivity {
 	            }
 	            ListAdapter adapter = new SimpleAdapter(context, jsonlist,
 	                    R.layout.list_item, new String[] { VTYPE, VCOLOR,
-	                            FUEL, TREAD }, new int[] {
-	                            R.id.vehicleType, R.id.vehicleColor, R.id.fuel,
-	                            R.id.treadType });
+	                            FUEL }, new int[] {
+	                            R.id.title, R.id.date, R.id.desc
+	                             });
 	 
 	            setListAdapter(adapter);
 	 

@@ -32,6 +32,7 @@
         </activity>
         <activity
             android:name="com.gdg.androidtraining.database.DatabaseActivity"
+            android:configChanges="keyboard|orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_database" >
         </activity>
         <activity
@@ -56,12 +57,15 @@
             android:label="@string/title_activity_listview" >
         </activity>
         <activity
-            android:name="com.gdg.androidtraining.phonecall.CallActivity"
-            android:label="@string/title_activity_call" >
+            android:name="com.gdg.androidtraining.phonecall.CallActivity" >
         </activity>
         <activity
             android:name="com.gdg.androidtraining.rssreader.RssReaderActivity"
-            android:label="@string/title_activity_call" >
+            android:configChanges="keyboard|orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.gdg.androidtraining.rssreader.DetailsActivity"
+            android:configChanges="keyboard|orientation|screenSize|keyboardHidden" >
         </activity>
     </application>
 
